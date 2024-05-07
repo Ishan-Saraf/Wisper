@@ -27,7 +27,7 @@ export default function Register() {
     };
 
     useEffect(() => {
-      if (localStorage.getItem('chat-app-user')) {
+      if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
         navigate('/');
       }
     })

@@ -21,7 +21,7 @@ const Button = styled.button`
 `;
 
 const getUserIdFromLocalStorage = () => {
-  const userData = localStorage.getItem("chat-app-user");
+  const userData = localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY);
   return userData? JSON.parse(userData)._id : null;
 };
 
